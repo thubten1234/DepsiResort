@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "./components/Banner";
 import BookingForm from "./components/BookingForm";
 import StoryLine from "./components/StoryLine";
@@ -25,13 +24,13 @@ function App() {
       <div>
         <div className="container text-center">
           <div className="row align-items-stretch">
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex align-items-center flex-column">
               <Facilities />
             </div>
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex align-items-center flex-column">
               <Activities />
             </div>
-            <div className="col-md-4 d-flex">
+            <div className="col-md-4 d-flex align-items-center flex-column">
               <Explore />
             </div>
           </div>
@@ -40,6 +39,7 @@ function App() {
       <div>
         <br />
       </div>
+      <div></div>
       <div>
         <Map />
       </div>
