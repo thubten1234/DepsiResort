@@ -7,6 +7,7 @@ import Facilities from "./components/facilities";
 import Footer from "./components/Footer-fluid";
 import Map from "./components/Map";
 import Navbar from "./components/Navbar";
+import Room from "./components/Rooms";
 
 function App() {
   return (
@@ -22,20 +23,14 @@ function App() {
         <StoryLine />
       </div>
       <div>
-        <div className="container text-center">
-          <div className="row align-items-stretch">
-            <div className="col-md-4 d-flex align-items-center flex-column">
-              <Facilities />
-            </div>
-            <div className="col-md-4 d-flex align-items-center flex-column">
-              <Activities />
-            </div>
-            <div className="col-md-4 d-flex align-items-center flex-column">
-              <Explore />
-            </div>
-          </div>
-        </div>
+        <Room />
+        <br />
+        <Activities />
+        <br />
+        <Facilities />
+        <hr />
       </div>
+
       <div>
         <br />
       </div>
