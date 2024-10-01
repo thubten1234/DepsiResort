@@ -22,7 +22,7 @@ function App() {
       <div>
         <StoryLine />
       </div>
-      <div>
+      <div className="informationsec d-flex flex-column align-items-center">
         <Room />
         <br />
         <Activities />

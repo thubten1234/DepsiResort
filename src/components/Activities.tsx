@@ -16,9 +16,6 @@ function Activities() {
               enjoy our serene setting.
             </p>
 
-            {/* Centered horizontal rule */}
-            <hr />
-
             <a href="#" className="explore-btn mt-auto">
               Explore More
             </a>

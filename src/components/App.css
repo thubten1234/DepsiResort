@@ -5,12 +5,23 @@ font-family: "Cinzel", serif;
 }
 .main{
     background-color: #faf8e4b9;
+    align-items:center ;
 }
 navbar-transparent {
     background-color: transparent !important;
     border: none;
   }
-  
+  .informationsec {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card {
+    max-width: 80%; 
+    width: 100%; 
+}
   .bg-dark.p-4 {
     background-color: rgba(0, 0, 0, 0.7) !important;
   }
@@ -41,7 +52,6 @@ navbar-transparent {
         font-size: 16px;
         color: #818181;
         border: 1px solid rgba(0, 0, 0, 0.634);
-        border-radius: 10px;
         padding: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease;
