@@ -9,7 +9,7 @@ function Room() {
             src="/rooms.png"
             className="img-fluid rounded-start d-none d-md-block"
             alt="Rooms"
-            style={{ height: "250px" }} // Adjust height as necessary
+            style={{ height: "500px" }} // Adjust height as necessary
           />
         </div>
         <div className="col-md-6">
