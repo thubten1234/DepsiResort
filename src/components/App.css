@@ -21,6 +21,7 @@ navbar-transparent {
 .card {
     max-width: 80%; 
     width: 100%; 
+    
 }
   .bg-dark.p-4 {
     background-color: rgba(0, 0, 0, 0.7) !important;
@@ -42,22 +43,18 @@ navbar-transparent {
 .card-text{
     text-align:justify center;
 }   
-.logo {
-    width: 150px; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px; /* Add some spacing */
-  }
+
   
-.explore-btn{
-        font-size: 16px;
-        color: #818181;
-        border: 1px solid rgba(0, 0, 0, 0.634);
-        padding: 8px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        text-decoration: none;
-    }
-      
+.explore-btn {
+  font-size: 16px;
+  color: #818181;
+  border: 1px solid rgba(0, 0, 0, 0.634);
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+ 
 .explore-btn:hover {
         color: white;
         background-color: #333;
