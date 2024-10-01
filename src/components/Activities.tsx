@@ -7,7 +7,7 @@ function Activities() {
         <div className="col-md-6">
           <div className="card-body h-100">
             <h3 className="card-title">Activities</h3>
-            <p className="card-text fs-4 fs-md-3 fs-lg-2">
+            <p className="card-text fs-5 fs-md-4 fs-lg-3">
               Depsi Resort offers an Outdoor Extravaganza ideal for networking,
               breaks, or celebrations. Enjoy cozy evenings around the Bonfire,
               perfect for sharing stories and creating lasting memories. Capture
@@ -16,7 +16,7 @@ function Activities() {
               enjoy our serene setting.
             </p>
 
-            <a href="#" className="explore-btn mt-auto">
+            <a href="#" className="explore-btn justify-content-center mt-auto">
               Explore More
             </a>
           </div>
@@ -24,7 +24,7 @@ function Activities() {
         <div className="col-md-6">
           <img
             src="/activities.png"
-            className="img-fluid rounded-start"
+            className="img-fluid rounded-start d-none d-md-block"
             alt="Activities"
             style={{ height: "500px" }}
           />

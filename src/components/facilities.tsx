@@ -7,7 +7,7 @@ function Facilities() {
         <div className="col-md-6">
           <img
             src="/facilities.png"
-            className="img-fluid rounded-start"
+            className="img-fluid rounded-start d-none d-md-block"
             alt="Facilities"
             style={{ height: "400px" }}
           />
@@ -15,7 +15,7 @@ function Facilities() {
         <div className="col-md-6">
           <div className="card-body h-100">
             <h3 className="card-title">Facilities</h3>
-            <p className="card-text fs-4 fs-md-3 fs-lg-2">
+            <p className="card fs-5 fs-md-4 fs-lg-3">
               At Depsi Resort, we prioritize your comfort and convenience with
               round-the-clock services. Our 24-hour front desk is always ready
               to assist you with transportation and local insights. Enjoy
@@ -25,7 +25,7 @@ function Facilities() {
               memorable stay.
             </p>
 
-            <a href="#" className="explore-btn mt-auto">
+            <a href="#" className="explore-btn justify-content-center mt-auto">
               Explore More
             </a>
           </div>
