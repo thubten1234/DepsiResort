@@ -2,12 +2,12 @@
 
 * {
 font-family: "Cinzel", serif;   
+
 }
 .main{
-    background-color: #faf8e4b9;
     align-items:center ;
 }
-navbar-transparent {
+.navbar-transparent {
     background-color: transparent !important;
     border: none;
   }
@@ -40,9 +40,10 @@ navbar-transparent {
   .sidenav a:hover {
     color: white;
   }
-.card-text{
-    text-align:justify center;
-}   
+  .card-title{
+    margin-top: 30%
+  }
+
 
   
 .explore-btn {

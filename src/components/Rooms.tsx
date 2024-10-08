@@ -9,14 +9,14 @@ function Room() {
             src="/rooms.png"
             className="img-fluid rounded-start d-none d-md-block"
             alt="Rooms"
-            style={{ height: "800px" }} // Adjust height as necessary
+            style={{ height: "600px" }} // Adjust height as necessary
           />
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
           <div className="card-body h-100">
             <h3 className="card-title">Rooms</h3>
             <br />
-            <p className="card-text fs-5 fs-md-4 fs-lg-3">
+            <p className="card-text fs-6 fs-md-4 fs-lg-3">
               Depsi Resort features a variety of rooms designed for comfort and
               luxury. With 16 accommodations, including standard and deluxe
               options, we cater to all preferences. Enjoy modern amenities,

@@ -1,6 +1,8 @@
 function StoryLine() {
   return (
     <div className="story">
+      <br />
+      <br />
       <hr />
       <p className="story-line fs-4 fs-md-3 fs-lg-2">
         Welcome to Depsi Resort, a charming retreat in the heart of Thimphu,

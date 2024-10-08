@@ -1,7 +1,6 @@
 import Banner from "./components/Banner";
 import BookingForm from "./components/BookingForm";
 import StoryLine from "./components/StoryLine";
-import Explore from "./components/Rooms";
 import Activities from "./components/Activities";
 import Facilities from "./components/facilities";
 import Footer from "./components/Footer-fluid";
@@ -16,16 +15,17 @@ function App() {
         <Navbar />
         <Banner />
       </div>
-      <div>
-        <BookingForm />
-      </div>
+
       <div>
         <StoryLine />
       </div>
       <div className="informationsec d-flex flex-column align-items-center">
+        <br />
         <Room />
         <br />
+        <br />
         <Activities />
+        <br />
         <br />
         <Facilities />
         <hr />

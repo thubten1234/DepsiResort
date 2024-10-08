@@ -2,17 +2,17 @@ import "./App.css";
 
 function Facilities() {
   return (
-    <div className="card mb-3" style={{ maxWidth: "80%" }}>
+    <div className="card mb-3" style={{ maxWidth: "80%", margin: "auto" }}>
       <div className="row g-0">
-        <div className="col-md-8">
+        <div className="col-md-7">
           <img
             src="/facilities.png"
             className="img-fluid rounded-start d-none d-md-block"
             alt="Facilities"
-            style={{ height: "800px" }}
+            style={{ height: "600px" }} // Adjust height as necessary
           />
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
           <div className="card-body h-100">
             <h3 className="card-title">Facilities</h3>
             <p className="card-text fs-5 fs-md-4 fs-lg-3">
@@ -24,8 +24,6 @@ function Facilities() {
               complimentary lodging and a warm welcome treat, ensuring a
               memorable stay.
             </p>
-            <br />
-            <br />
             <a href="#" className="explore-btn mt-auto">
               Explore More
             </a>
