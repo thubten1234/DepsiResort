@@ -25,6 +25,7 @@ function Facilities() {
               memorable stay.
             </p>
             <br />
+    
             <a href="#" className="explore-btn mt-auto">
               Explore More
             </a>
