@@ -2,6 +2,7 @@ import "./App.css";
 function Footer() {
   return (
     <div className="footer-basic">
+      <hr />
       <footer>
         <ul className="list-inline">
           <li className="list-inline-item">

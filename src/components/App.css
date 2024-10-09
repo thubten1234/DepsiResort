@@ -9,7 +9,13 @@ font-family: "Cinzel", serif;
   margin: 0 auto; 
   padding: 0 15px; 
 }
+.row {
+  display: flex;
+}
 
+.column {
+  flex: 50%;
+}
 .informationsec {
   display: flex;
   flex-direction: column; 
@@ -26,28 +32,23 @@ font-family: "Cinzel", serif;
   padding: 15px; 
 }
 
-.navbar-transparent {
-    background-color: transparent !important;
-    border: none;
-  }
+
   .informationsec {
     width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
-.row {
-  display: flex;
-}
 
-.column {
-  flex: 50%;
-}
 .card {
     max-width: 80%; 
     width: 100%; 
-    
 }
+.navbar-transparent {
+      background-color: transparent !important;
+      border: none;
+    }
+
   .bg-dark.p-4 {
     background-color: rgba(0, 0, 0, 0.7) !important;
   }
@@ -89,17 +90,26 @@ font-family: "Cinzel", serif;
       
   }
   .google-map {
-    padding-bottom: 50%;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .map-container {
     position: relative;
-}
-
-.google-map iframe {
-    height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+  }
+  
+  .map-iframe {
     position: absolute;
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
 
 .banner-container {
     position: relative; 
@@ -136,25 +146,21 @@ font-family: "Cinzel", serif;
     background-color: transparent;
   }
 
-  
-
-
-  @media (max-width: 768px) {
-
-  }
-
-  @media (max-width: 576px) {
-  
-    
-  }
-
   .story hr {
-          width: 90%;        
+          width: 80%;        
           height: 2px;       
-          background-color: #818181; 
+          background-color: black; 
+          opacity: .3;
           margin: 20px auto;
       }
-      
+
+   .footer-basic hr{
+
+          height: 1px;       
+          background-color: black; 
+          opacity: 1;
+          margin: 20px auto;
+    }
 
   .story p {
           text-align:center ;
@@ -166,8 +172,8 @@ font-family: "Cinzel", serif;
 
         .footer-basic {
           padding:40px 0;
-          background-color:#4b4c4d;
-          color:white;
+          background-color:#ffffff;
+          color:rgb(0, 0, 0);
         }
         
         .footer-basic ul {
