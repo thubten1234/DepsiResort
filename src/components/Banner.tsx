@@ -1,4 +1,3 @@
-import "./Component.css";
 import "./App.css";
 
 function Banner() {
@@ -9,8 +8,8 @@ function Banner() {
       </video>
       <div className="tinted-overlay"></div> {/* Moved this div outside */}
       <div className="video-overlay">
-        <h1>Depsi Resort</h1>
-        <p>A Tranquil Fusion of Tradition and Modernity</p>
+        <h1 className="large-header">Depsi Resort</h1>
+        <h2>A Tranquil Fusion of Tradition and Modernity</h2>
         <button className="booking-btn">Book Now</button>
       </div>
     </div>

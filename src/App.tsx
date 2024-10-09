@@ -1,5 +1,5 @@
 import Banner from "./components/Banner";
-import BookingForm from "./components/BookingForm";
+
 import StoryLine from "./components/StoryLine";
 import Activities from "./components/Activities";
 import Facilities from "./components/facilities";
@@ -10,35 +10,33 @@ import Room from "./components/Rooms";
 
 function App() {
   return (
-    <div className="main">
+    <div>
       <div className="banner-container">
         <Navbar />
         <Banner />
       </div>
+      <div className="main">
+        <div>
+          <StoryLine />
+        </div>
 
-      <div>
-        <StoryLine />
-      </div>
-      <div className="informationsec d-flex flex-column align-items-center">
-        <br />
-        <Room />
-        <br />
-        <br />
-        <Activities />
-        <br />
-        <br />
-        <Facilities />
-        <hr />
-      </div>
+        <div className="informationsec d-flex flex-column align-items-center">
+          <div className="container">
+            <Room />
+            <br />
+            <Activities />
 
-      <div>
-        <br />
-      </div>
-      <div>
-        <Map />
-      </div>
-      <div>
-        <Footer />
+            <Facilities />
+          </div>
+        </div>
+
+        <div>
+          <Map />
+        </div>
+
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import "./App.css";
 function Map() {
   return (
     <div className="google-map">
