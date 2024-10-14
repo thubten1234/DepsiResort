@@ -1,44 +1,19 @@
-import Banner from "./components/Banner";
-
-import StoryLine from "./components/StoryLine";
-import Activities from "./components/Activities";
-import Facilities from "./components/facilities";
-import Footer from "./components/Footer-fluid";
-import Map from "./components/Map";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Room from "./components/Rooms";
+import Home from "./Pages/Home";
+import AboutUs from "./Pages/AboutUs";
 
 function App() {
   return (
-    <div>
-      <div className="banner-container">
-        <Navbar />
-        <Banner />
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+        </Routes>
       </div>
-      <div className="main">
-        <div>
-          <StoryLine />
-        </div>
-
-        <div className="informationsec d-flex flex-column align-items-center">
-          <div className="container">
-            <Room />
-            <br />
-            <Activities />
-
-            <Facilities />
-          </div>
-        </div>
-
-        <div>
-          <Map />
-        </div>
-
-        <div>
-          <Footer />
-        </div>
-      </div>
-    </div>
+    </Router>
   );
 }
 

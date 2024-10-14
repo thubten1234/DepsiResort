@@ -1,4 +1,6 @@
+// src/components/Navbar.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function Navbar() {
@@ -11,7 +13,8 @@ function Navbar() {
       >
         <div className="bg-dark p-4">
           <div className="sidenav">
-            <a href="#">About</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
             <a href="#">Services</a>
             <a href="#">Library</a>
             <a href="#">Rooms</a>
