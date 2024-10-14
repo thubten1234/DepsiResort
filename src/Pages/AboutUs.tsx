@@ -10,7 +10,8 @@ function AboutUs() {
       </div>
       <div className="aboutus-container">
         <div className="aboutus-quote">
-          <h5>
+          <img src="public/Depsi-Resort-Logo.png " className="aboutus-cover" />
+          <h5 className="covertext">
             "Discover an immaculate and enchanting retreat at Depsi Resort,
             where families can create lasting memories and individuals can find
             a serene escape from the hustle and bustle of everyday life. We
@@ -18,10 +19,11 @@ function AboutUs() {
             relaxation and rejuvenation. Book your stay today and indulge in the
             peaceful ambiance that awaits you!"
           </h5>
-          <br />
         </div>
-        <h1>About Us</h1>
+        <br />
         <div className="aboutus-content">
+          <h1>Our Story</h1>
+
           <div className="aboutus-text">
             <p>
               At the helm of Depsi Resort is Dorji Tshering, a distinguished

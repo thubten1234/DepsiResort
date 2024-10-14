@@ -2,15 +2,13 @@ import "./App.css";
 
 function Room() {
   return (
-    <div className="row" style={{ maxWidth: "130%", marginBottom: "60px" }}>
-      <div className="column  d-none d-md-block">
-        <img
-          src="/rooms.png"
-          className="img-fluid d-none d-md-block"
-          alt="Rooms"
-        />
+    <div className="row" style={{ marginBottom: "60px" }}>
+      {/* Image Column: Show on all screens */}
+      <div className="column col-12 col-md-6">
+        <img src="/rooms.png" className="img-fluid" alt="Rooms" />
       </div>
-      <div className="column">
+      {/* Text Column: Always show */}
+      <div className="column col-12 col-md-6">
         <h3 className="card-title">Rooms</h3>
         <br />
         <p className="card-text fs-6 fs-md-4 fs-lg-3">
@@ -20,7 +18,6 @@ function Room() {
           and a peaceful environment, perfect for a tranquil getaway. Experience
           unmatched service and hospitality during your stay.
         </p>
-
         <br />
         <a href="#" className="explore-btn mt-auto">
           Explore More

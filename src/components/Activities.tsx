@@ -2,9 +2,14 @@ import "./App.css";
 
 function Activities() {
   return (
-    <div className="row" style={{ maxWidth: "130%", marginBottom: "60px" }}>
-      <div className="column">
-        <h3 className="card-title">Activities </h3>
+    <div className="row" style={{ marginBottom: "60px" }}>
+      {/* Image Column: Show first on small screens, second on medium and up */}
+      <div className="column col-12 col-md-6 order-1 order-md-2">
+        <img src="/activities.png" className="img-fluid" alt="Activities" />
+      </div>
+      {/* Text Column: Always show */}
+      <div className="column col-12 col-md-6 order-2 order-md-1">
+        <h3 className="card-title">Activities</h3>
         <br />
         <p className="card-text fs-6 fs-md-4 fs-lg-3">
           Depsi Resort offers an Outdoor Extravaganza ideal for networking,
@@ -18,9 +23,6 @@ function Activities() {
         <a href="#" className="explore-btn mt-auto">
           Explore More
         </a>
-      </div>
-      <div className="column  d-none d-md-block">
-        <img src="/activities.png" className="img-fluid d-none d-md-block" />
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import "./App.css";
 function StoryLine() {
   return (
     <div className="story">
