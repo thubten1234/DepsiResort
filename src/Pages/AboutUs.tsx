@@ -10,7 +10,7 @@ function AboutUs() {
       </div>
       <div className="aboutus-container">
         <div className="aboutus-quote">
-          <img src="public/Depsi-Resort-Logo.png " className="aboutus-cover" />
+          <img src="/Depsi-Resort-Logo.png " className="aboutus-cover" />
           <h5 className="covertext">
             "Discover an immaculate and enchanting retreat at Depsi Resort,
             where families can create lasting memories and individuals can find
@@ -71,7 +71,7 @@ function AboutUs() {
           </div>
           <div className="aboutus-image">
             <img
-              src="public/Depsi-pres.png"
+              src="/Depsi-pres.png"
               alt="Dorji Tshering"
               style={{ border: "1px solid", borderRadius: 0 }}
             />
