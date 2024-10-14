@@ -3,7 +3,7 @@ import "./App.css";
 function Room() {
   return (
     <div className="row" style={{ maxWidth: "130%", marginBottom: "60px" }}>
-      <div className="column">
+      <div className="column  d-none d-md-block">
         <img
           src="/rooms.png"
           className="img-fluid d-none d-md-block"

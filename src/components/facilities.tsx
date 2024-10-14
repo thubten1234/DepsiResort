@@ -3,14 +3,14 @@ import "./App.css";
 function Facilities() {
   return (
     <div className="row" style={{ maxWidth: "130%", marginBottom: "60px" }}>
-      <div className="column">
+      <div className="column  d-none d-md-block">
         <img
           src="/facilities.png"
           className="img-fluid d-none d-md-block"
           alt="Facilities"
         />
       </div>
-      <div className="column">
+      <div className="column ">
         <h3 className="card-title">Facilities</h3>
         <br />
         <p className="card-text fs-6 fs-md-4 fs-lg-3">

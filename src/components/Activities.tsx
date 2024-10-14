@@ -19,7 +19,7 @@ function Activities() {
           Explore More
         </a>
       </div>
-      <div className="column">
+      <div className="column  d-none d-md-block">
         <img src="/activities.png" className="img-fluid d-none d-md-block" />
       </div>
     </div>
