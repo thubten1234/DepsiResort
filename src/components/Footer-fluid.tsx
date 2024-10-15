@@ -1,17 +1,18 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer-basic">
       <footer>
         <ul className="list-inline">
           <li className="list-inline-item">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="list-inline-item">
-            <a href="/services">Services</a>
+            <Link to="/services">Services</Link>
           </li>
           <li className="list-inline-item">
-            <a href="/about">About</a>
+            <Link to="/about">About Us</Link>
           </li>
           <li className="list-inline-item">
             <a href="#">Terms</a>
