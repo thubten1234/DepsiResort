@@ -11,7 +11,7 @@ function AboutUs() {
       {/* Hero Section */}
       <div
         className="hero-section text-center"
-        style={{ backgroundImage: 'url("/aboutusbg.png")' }}
+        style={{ backgroundImage: 'url("/aboutusbg.png")', height: "600px" }}
       >
         <div className="hero-overlay">
           <h1 className="hero-title">About Us</h1>
