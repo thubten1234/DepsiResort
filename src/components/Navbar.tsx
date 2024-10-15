@@ -15,7 +15,7 @@ function Navbar() {
           <div className="sidenav">
             <Link to="/">Home</Link>
             <Link to="/about">About Us</Link>
-            <a href="/Services">Services</a>
+            <a href="/services">Services</a>
             <a href="#">Library</a>
             <a href="#">Rooms</a>
             <a href="#">Contact</a>
