@@ -7,19 +7,18 @@ function AboutUs() {
     <div className="main">
       <div className="banner-container">
         <Navbar />
-      </div>
-
-      {/* Hero Section */}
-      <div
-        className="hero-section text-center"
-        style={{ backgroundImage: 'url("/aboutusbg.png")' }}
-      >
-        <div className="hero-overlay">
-          <h1 className="hero-title">About Us</h1>
-          <p className="hero-subtitle">
-            Discover an immaculate and enchanting retreat at Depsi Resort, where
-            comfort meets tranquility.
-          </p>
+        {/* Hero Section */}
+        <div
+          className="hero-section text-center"
+          style={{ backgroundImage: 'url("/aboutusbg.png")' }}
+        >
+          <div className="hero-overlay">
+            <h1 className="hero-title">About Us</h1>
+            <p className="hero-subtitle">
+              Discover an immaculate and enchanting retreat at Depsi Resort,
+              where comfort meets tranquility.
+            </p>
+          </div>
         </div>
       </div>
 
