@@ -2,14 +2,13 @@ import "./App.css";
 function Footer() {
   return (
     <div className="footer-basic">
-      <hr />
       <footer>
         <ul className="list-inline">
           <li className="list-inline-item">
             <a href="/">Home</a>
           </li>
           <li className="list-inline-item">
-            <a href="#">Services</a>
+            <a href="/services">Services</a>
           </li>
           <li className="list-inline-item">
             <a href="/about">About</a>

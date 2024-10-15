@@ -4,24 +4,23 @@ import Footer from "../components/Footer-fluid";
 
 function AboutUs() {
   return (
-    <div className="main">
+    <div>
       <div className="banner-container">
         <Navbar />
-        {/* Hero Section */}
-        <div
-          className="hero-section text-center"
-          style={{ backgroundImage: 'url("/aboutusbg.png")' }}
-        >
-          <div className="hero-overlay">
-            <h1 className="hero-title">About Us</h1>
-            <p className="hero-subtitle">
-              Discover an immaculate and enchanting retreat at Depsi Resort,
-              where comfort meets tranquility.
-            </p>
-          </div>
+      </div>
+      {/* Hero Section */}
+      <div
+        className="hero-section text-center"
+        style={{ backgroundImage: 'url("/aboutusbg.png")' }}
+      >
+        <div className="hero-overlay">
+          <h1 className="hero-title">About Us</h1>
+          <p className="hero-subtitle">
+            Discover an immaculate and enchanting retreat at Depsi Resort, where
+            comfort meets tranquility.
+          </p>
         </div>
       </div>
-
       {/* About Us Content */}
       <div className="aboutus-container container my-5">
         <div className="row">
