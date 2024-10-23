@@ -40,7 +40,7 @@ const Banner: React.FC = () => {
   const updateCount = (type: keyof FormData, increment: number) => {
     setFormData((prevState) => ({
       ...prevState,
-      [type]: Math.max(0, prevState[type] + increment), // Prevent negative counts
+      [type]: Math.max(0, (prevState[type] as number) + increment), // Cast to number
     }));
   };
 
