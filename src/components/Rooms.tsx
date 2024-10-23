@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function Room() {
@@ -19,9 +20,9 @@ function Room() {
           unmatched service and hospitality during your stay.
         </p>
         <br />
-        <a href="#" className="explore-btn mt-auto">
-          Explore More
-        </a>
+        <Link to="/rooms">
+          <button className="explore-btn mt-auto">Explore More</button>
+        </Link>
       </div>
     </div>
   );

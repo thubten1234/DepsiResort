@@ -20,9 +20,7 @@ function Facilities() {
           a warm welcome treat, ensuring a memorable stay.
         </p>
         <br />
-        <a href="#" className="explore-btn mt-auto">
-          Explore More
-        </a>
+        <button className="explore-btn mt-auto">Explore More</button>
       </div>
     </div>
   );
