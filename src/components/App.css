@@ -485,3 +485,16 @@ form button[type="submit"]:hover {
     font-size: 0.9rem;
   }
 }
+/*slide-in effect only on mobile devices */
+@media (max-width: 768px) {
+  .slide-in {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 1s ease-out;
+  }
+
+  .slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
