@@ -109,7 +109,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 14% auto;
-  width: min-content;
 }
 
 .address-section {
@@ -137,6 +136,9 @@
 @media (max-width: 768px) {
   .map-section {
     height: 400px;
+  }
+  .map-container {
+    width: min-content;
   }
 }
 
