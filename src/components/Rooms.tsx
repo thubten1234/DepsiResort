@@ -19,7 +19,7 @@ function Room() {
           unmatched service and hospitality during your stay.
         </p>
         <br />
-        <Link to="/rooms">
+        <Link to="/rooms" onClick={() => window.scrollTo(0, 0)}>
           <button className="explore-btn mt-auto">Explore More</button>
         </Link>
       </div>

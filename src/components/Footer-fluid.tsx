@@ -6,13 +6,19 @@ function Footer() {
       <footer>
         <ul className="list-inline">
           <li className="list-inline-item">
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+              Home
+            </Link>
           </li>
           <li className="list-inline-item">
-            <Link to="/services">Services</Link>
+            <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+              Services
+            </Link>
           </li>
           <li className="list-inline-item">
-            <Link to="/about">About Us</Link>
+            <Link to="/about" onClick={() => window.scrollTo(0, 0)}>
+              About Us
+            </Link>
           </li>
           <li className="list-inline-item">
             <a href="#">Terms</a>

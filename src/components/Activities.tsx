@@ -20,7 +20,12 @@ function Activities() {
           serene setting.
         </p>
         <br />
-        <button className="explore-btn mt-auto">Explore More</button>
+        <button
+          className="explore-btn mt-auto"
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          Explore More
+        </button>
       </div>
     </div>
   );

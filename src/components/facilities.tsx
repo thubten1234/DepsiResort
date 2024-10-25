@@ -8,7 +8,9 @@ function Facilities() {
       </div>
 
       <div className="column col-12 col-md-6">
-        <h3 className="card-title">Facilities</h3>
+        <h3 className="card-title" onClick={() => window.scrollTo(0, 0)}>
+          Facilities
+        </h3>
         <br />
         <p className="card-text fs-6 fs-md-4 fs-lg-3">
           At Depsi Resort, we prioritize your comfort and convenience with
