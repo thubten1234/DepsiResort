@@ -5,11 +5,11 @@ function Map() {
   return (
     <div className="map-container">
       <div className="address-section">
-        <h2>Our Address</h2>
-        <p>123 Resort Lane</p>
+        <h2>Address</h2>
+        <p>Depsi Babesa Above Desi School</p>
         <p>Thimphu, Bhutan</p>
         <p>Phone: +975 12345678</p>
-        <p>Email: contact@resort.com</p>
+        <p>Email: Depsie@resort.com</p>
       </div>
       <div className="map-section">
         <iframe
@@ -18,7 +18,7 @@ function Map() {
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
-          loading="lazy"
+          loading="eager"
           referrerPolicy="no-referrer-when-downgrade"
           title="Google Map"
         ></iframe>
