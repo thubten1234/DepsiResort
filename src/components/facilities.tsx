@@ -3,11 +3,10 @@ import "./App.css";
 function Facilities() {
   return (
     <div className="row" style={{ marginBottom: "60px" }}>
-      {/* Image Column: Show on small screens and larger */}
       <div className="column col-12 col-md-6">
         <img src="/facilities.png" className="img-fluid" alt="Facilities" />
       </div>
-      {/* Text Column: Always show */}
+
       <div className="column col-12 col-md-6">
         <h3 className="card-title">Facilities</h3>
         <br />
