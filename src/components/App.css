@@ -67,10 +67,11 @@
   color: white;
 }
 .card-title {
-  margin-top: 20%;
+  margin-top: 14%;
 }
 
 .explore-btn {
+  position: relative;
   font-size: 16px;
   color: #818181;
   border: 1px solid rgba(0, 0, 0, 0.634);
@@ -79,33 +80,61 @@
   cursor: pointer;
   margin-bottom: 30%;
   max-width: 40%;
-  transition: background-color 0.3s ease;
+  overflow: hidden;
+  transition: color 0.3s ease, background-color 0.3s ease;
   text-decoration: none;
 }
-
+.explore-btn {
+  position: relative;
+  z-index: 1;
+}
+.explore-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.9s ease;
+  z-index: -1;
+}
+.explore-btn:hover::before {
+  left: 0;
+}
 .explore-btn:hover {
   color: white;
-  background-color: #333;
-}
-.google-map {
-  max-width: 100%;
-  margin: auto;
 }
 
 .map-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  gap: 0;
+  margin-left: 10%;
+  padding: 30px;
+}
+
+.address-section {
+  flex: 1;
+  min-width: 40%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-section {
+  flex: 2;
+  min-width: 40%;
+  max-width: 50%;
+  height: 450px;
   overflow: hidden;
 }
 
-.map-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.map-section iframe {
+  border: none;
   width: 100%;
   height: 100%;
-  border: 0;
 }
 
 .banner-container {
