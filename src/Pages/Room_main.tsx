@@ -1,8 +1,16 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 function Room_main() {
   return (
     <div className="room-page">
+      <div className="banner-container">
+        <Navbar />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <h1 className="room-title">Our Rooms</h1>
 
       <div className="room-card">

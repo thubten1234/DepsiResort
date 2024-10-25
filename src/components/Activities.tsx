@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 
 function Activities() {
@@ -20,9 +21,7 @@ function Activities() {
           serene setting.
         </p>
         <br />
-        <a href="#" className="explore-btn mt-auto">
-          Explore More
-        </a>
+        <button className="explore-btn mt-auto">Explore More</button>
       </div>
     </div>
   );
