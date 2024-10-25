@@ -4,11 +4,10 @@ import "./App.css";
 function Room() {
   return (
     <div className="row" style={{ marginBottom: "60px" }}>
-      {/* Image Column: Show on all screens */}
       <div className="column col-12 col-md-6">
         <img src="/rooms.png" className="img-fluid" alt="Rooms" />
       </div>
-      {/* Text Column: Always show */}
+
       <div className="column col-12 col-md-6">
         <h3 className="card-title">Rooms</h3>
         <br />

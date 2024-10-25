@@ -12,12 +12,14 @@ function Home() {
   const roomRef = useRef(null);
   const activitiesRef = useRef(null);
   const facilitiesRef = useRef(null);
+  const mapRef = useRef(null);
 
   // State to track visibility of each component
   const [isVisible, setIsVisible] = useState({
     room: false,
     activities: false,
     facilities: false,
+    map: false,
   });
 
   // Function to check if an element is in the viewport
@@ -40,6 +42,7 @@ function Home() {
           prevVisibility.activities || isInViewport(activitiesRef.current),
         facilities:
           prevVisibility.facilities || isInViewport(facilitiesRef.current),
+        map: prevVisibility.facilities || isInViewport(mapRef.current),
       }));
     }
   };
@@ -83,10 +86,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <main>
+        <div
+          ref={mapRef}
+          className={`slide-in ${isVisible.map ? "visible" : ""}`}
+        >
           <Map />
-        </main>
-
+        </div>
         <div>
           <Footer />
         </div>
