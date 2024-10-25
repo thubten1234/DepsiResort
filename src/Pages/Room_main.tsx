@@ -104,7 +104,7 @@ function Room_main() {
         </div>
 
         <div className="amenities-section">
-          <h3 className="amenities-title">Room Features</h3>
+          <h3 className="amenities-title">Room Amenities</h3>
           <ul className="amenities-list">
             {amenities.map((amenity, index) => (
               <li key={index} className="amenity-item">
