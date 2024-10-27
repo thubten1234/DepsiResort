@@ -4,7 +4,7 @@ function StoryLine() {
       <br />
       <br />
       <hr />
-      <p className="story-line fs-4 fs-md-3 fs-lg-2">
+      <p className="story-line fs-6 fs-md-5 fs-lg-4">
         Welcome to Depsi Resort, a charming retreat in the heart of Thimphu,
         Bhutan. Conveniently located near the city center, our cozy three-star
         resort offers comfortable accommodations and easy access to local

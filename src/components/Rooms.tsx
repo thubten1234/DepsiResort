@@ -9,7 +9,7 @@ function Room() {
       </div>
 
       <div className="column col-12 col-md-6">
-        <h3 className="card-title">Rooms</h3>
+        <h2 className="card-title">Rooms</h2>
         <br />
         <p className="card-text fs-6 fs-md-4 fs-lg-3">
           Depsi Resort features a variety of rooms designed for comfort and

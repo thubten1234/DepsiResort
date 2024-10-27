@@ -68,7 +68,7 @@ const Banner: React.FC = () => {
       <div className="tinted-overlay"></div>
       <div className="video-overlay">
         <h1 className="large-header">Depsi Resort</h1>
-        <h2>A Tranquil Fusion of Tradition and Modernity</h2>
+        <h5>A Tranquil Fusion of Tradition and Modernity</h5>
         <button className="booking-btn" onClick={toggleBox}>
           Book Now
         </button>

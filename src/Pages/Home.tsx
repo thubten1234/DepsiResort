@@ -71,7 +71,7 @@ function Home() {
             >
               <Room />
             </div>
-            <br />
+
             <div
               ref={activitiesRef}
               className={`slide-in ${isVisible.activities ? "visible" : ""}`}
@@ -92,10 +92,8 @@ function Home() {
         >
           <Map />
         </div>
-        <div>
-          <Footer />
-        </div>
       </div>
+      <Footer />
     </div>
   );
 }
