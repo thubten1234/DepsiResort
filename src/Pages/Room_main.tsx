@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer-fluid";
 
 function Room_main() {
-  // Define a type for room keys
   type RoomType = "Standard" | "Deluxe" | "Deluxe with Balcony";
 
   const [selectedRoom, setSelectedRoom] = useState<RoomType>("Standard");
@@ -32,7 +31,6 @@ function Room_main() {
     },
   };
 
-  // Amenities with corresponding image paths
   const amenities = [
     { name: "Extra Bed", icon: "/bed-alt.png" },
     { name: "In-room Service", icon: "/room-service.png" },
@@ -54,64 +52,75 @@ function Room_main() {
       </div>
       <div
         className="hero-section text-center"
-        style={{ backgroundImage: 'url("/rooms.png") ' }}
+        style={{ backgroundImage: 'url("/rooms.png")' }}
       >
         <div className="hero-overlay">
           <h1 className="hero-title">Your Rooms</h1>
-
           <h4 className="hero-subtitle">Comfort and Elegance Combined</h4>
         </div>
       </div>
-      <div className="unique-room-page">
-        <div className="room-filter">
-          <button
-            className={`filter-btn ${
-              selectedRoom === "Standard" ? "active" : ""
-            }`}
-            onClick={() => setSelectedRoom("Standard")}
-          >
-            Standard Room
-          </button>
-          <button
-            className={`filter-btn ${
-              selectedRoom === "Deluxe" ? "active" : ""
-            }`}
-            onClick={() => setSelectedRoom("Deluxe")}
-          >
-            Deluxe Room
-          </button>
-          <button
-            className={`filter-btn ${
-              selectedRoom === "Deluxe with Balcony" ? "active" : ""
-            }`}
-            onClick={() => setSelectedRoom("Deluxe with Balcony")}
-          >
-            Deluxe Room with Balcony
-          </button>
+      <div className="unique-room-page container">
+        <div className="row text-center mb-4">
+          <div className="col">
+            <button
+              className={`filter-btn btn ${
+                selectedRoom === "Standard" ? "active" : ""
+              }`}
+              onClick={() => setSelectedRoom("Standard")}
+            >
+              Standard Room
+            </button>
+          </div>
+          <div className="col">
+            <button
+              className={`filter-btn btn ${
+                selectedRoom === "Deluxe" ? "active" : ""
+              }`}
+              onClick={() => setSelectedRoom("Deluxe")}
+            >
+              Deluxe Room
+            </button>
+          </div>
+          <div className="col">
+            <button
+              className={`filter-btn btn ${
+                selectedRoom === "Deluxe with Balcony" ? "active" : ""
+              }`}
+              onClick={() => setSelectedRoom("Deluxe with Balcony")}
+            >
+              Deluxe Room with Balcony
+            </button>
+          </div>
         </div>
 
-        <div className="unique-room-card">
-          <div className="room-image-container">
-            <img
-              src={roomData[selectedRoom].image}
-              alt={roomData[selectedRoom].title}
-              className="room-image"
-            />
+        <div className="unique-room-card row">
+          <div className="col-md-6">
+            <div className="room-image-container">
+              <img
+                src={roomData[selectedRoom].image}
+                alt={roomData[selectedRoom].title}
+                className="room-image img-fluid"
+              />
+            </div>
           </div>
-          <div className="room-content">
-            <h2 className="unique-room-type">{roomData[selectedRoom].title}</h2>
-            <p className="room-description">
-              {roomData[selectedRoom].description}
-            </p>
-            <button className="book-now-btn">Book Now</button>
+          <div className="col-md-6">
+            <div className="room-content">
+              <h2 className="unique-room-type">
+                {roomData[selectedRoom].title}
+              </h2>
+              <p className="room-description">
+                {roomData[selectedRoom].description}
+              </p>
+              <button className="book-now-btn btn btn-primary">Book Now</button>
+            </div>
           </div>
         </div>
 
         <div className="amenities-section">
           <h3 className="amenities-title">Room Amenities</h3>
-          <ul className="amenities-list">
+          <ul className="amenities-list list-unstyled row">
             {amenities.map((amenity, index) => (
-              <li key={index} className="amenity-item">
+              <li key={index} className="amenity-item col-md-4">
                 <img
                   src={amenity.icon}
                   alt={amenity.name}
