@@ -58,7 +58,8 @@ function Room_main() {
       >
         <div className="hero-overlay">
           <h1 className="hero-title">Your Rooms</h1>
-          <p className="hero-subtitle">Comfort and Elegance Combined</p>
+
+          <h4 className="hero-subtitle">Comfort and Elegance Combined</h4>
         </div>
       </div>
       <div className="unique-room-page">

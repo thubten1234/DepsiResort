@@ -634,14 +634,16 @@ button.close-btn:hover {
 
 /*main room css*/
 /* src/Pages/Room_main.css */
+/* Hero Section */
 .hero-section {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 50vh; /* Adjust height as necessary */
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center; /* Center text */
 }
 
 .hero-overlay {
@@ -652,22 +654,25 @@ button.close-btn:hover {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
+  flex-direction: column; /* Stack title and subtitle */
   align-items: center;
   justify-content: center;
+  padding: 20px; /* Add padding for spacing */
 }
 
 .hero-title {
   font-size: 4rem;
   font-weight: bold;
   color: #fff;
+  margin: 0; /* Remove default margin */
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
   color: #fff;
+  margin: 10px 0 0; /* Add top margin for spacing */
 }
 
-/* Room Filter Buttons */
 .room-filter {
   text-align: center;
   margin: 40px 0;
