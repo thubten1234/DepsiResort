@@ -32,19 +32,19 @@ function Room_main() {
     },
   };
 
-  // Amenities with corresponding Bootstrap icons
+  // Amenities with corresponding image paths
   const amenities = [
-    { name: "Extra Bed", icon: "bi-segmented-nav" },
-    { name: "In-room Service", icon: "bi bi-check-circle" },
-    { name: "Cable TV", icon: "bi bi-tv" },
-    { name: "Bottled Water", icon: "bi bi-droplet" },
-    { name: "Free Wi-Fi", icon: "bi bi-wifi" },
-    { name: "Hair Dryer", icon: "bi bi-person" },
-    { name: "Organic Soap", icon: "bi bi-x-diamond" },
-    { name: "Mini-Bar", icon: "bi bi-cup" },
-    { name: "Extra Pillow", icon: "bi bi-square" },
-    { name: "Coffee/Tea Sets", icon: "bi bi-cup" },
-    { name: "Safe", icon: "bi bi-lock" },
+    { name: "Extra Bed", icon: "/bed-alt.png" },
+    { name: "In-room Service", icon: "/room-service.png" },
+    { name: "Cable TV", icon: "/screen.png" },
+    { name: "Bottled Water", icon: "/water-bottle.png" },
+    { name: "Free Wi-Fi", icon: "/wifi.png" },
+    { name: "Hair Dryer", icon: "/dryer.png" },
+    { name: "Organic Soap", icon: "/soap-alt.png" },
+    { name: "Mini-Bar", icon: "/minibar.png" },
+    { name: "Extra Pillow", icon: "/mattress-pillow.png" },
+    { name: "Coffee/Tea Sets", icon: "/mug-alt.png" },
+    { name: "Safe", icon: "/shield-check.png" },
   ];
 
   return (
@@ -62,10 +62,6 @@ function Room_main() {
         </div>
       </div>
       <div className="unique-room-page">
-        <br />
-        <br />
-        <br />
-        <br />
         <div className="room-filter">
           <button
             className={`filter-btn ${
@@ -94,13 +90,20 @@ function Room_main() {
         </div>
 
         <div className="unique-room-card">
-          <img
-            src={roomData[selectedRoom].image}
-            alt={roomData[selectedRoom].title}
-            className="room-image"
-          />
-          <h2 className="unique-room-type">{roomData[selectedRoom].title}</h2>
-          <p>{roomData[selectedRoom].description}</p>
+          <div className="room-image-container">
+            <img
+              src={roomData[selectedRoom].image}
+              alt={roomData[selectedRoom].title}
+              className="room-image"
+            />
+          </div>
+          <div className="room-content">
+            <h2 className="unique-room-type">{roomData[selectedRoom].title}</h2>
+            <p className="room-description">
+              {roomData[selectedRoom].description}
+            </p>
+            <button className="book-now-btn">Book Now</button>
+          </div>
         </div>
 
         <div className="amenities-section">
@@ -108,7 +111,12 @@ function Room_main() {
           <ul className="amenities-list">
             {amenities.map((amenity, index) => (
               <li key={index} className="amenity-item">
-                <i className={amenity.icon}></i> {amenity.name}
+                <img
+                  src={amenity.icon}
+                  alt={amenity.name}
+                  className="amenity-icon"
+                />
+                <span>{amenity.name}</span>
               </li>
             ))}
           </ul>
