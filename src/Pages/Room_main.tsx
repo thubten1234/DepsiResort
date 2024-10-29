@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer-fluid";
 
 function Room_main() {
+  // Define a type for room keys
   type RoomType = "Standard" | "Deluxe" | "Deluxe with Balcony";
 
   const [selectedRoom, setSelectedRoom] = useState<RoomType>("Standard");
@@ -31,6 +32,7 @@ function Room_main() {
     },
   };
 
+  // Amenities with corresponding image paths
   const amenities = [
     { name: "Extra Bed", icon: "/bed-alt.png" },
     { name: "In-room Service", icon: "/room-service.png" },
@@ -52,7 +54,7 @@ function Room_main() {
       </div>
       <div
         className="hero-section text-center"
-        style={{ backgroundImage: 'url("/rooms.png")' }}
+        style={{ backgroundImage: 'url("/rooms.png") ' }}
       >
         <div className="hero-overlay">
           <h1 className="hero-title">Your Rooms</h1>
@@ -60,8 +62,8 @@ function Room_main() {
         </div>
       </div>
       <div className="unique-room-page container">
-        <div className="row text-center mb-4">
-          <div className="col">
+        <div className="row 1mb-4">
+          <div className="col-auto">
             <button
               className={`filter-btn btn ${
                 selectedRoom === "Standard" ? "active" : ""
@@ -71,7 +73,7 @@ function Room_main() {
               Standard Room
             </button>
           </div>
-          <div className="col">
+          <div className="col-auto">
             <button
               className={`filter-btn btn ${
                 selectedRoom === "Deluxe" ? "active" : ""
@@ -81,7 +83,7 @@ function Room_main() {
               Deluxe Room
             </button>
           </div>
-          <div className="col">
+          <div className="col-auto">
             <button
               className={`filter-btn btn ${
                 selectedRoom === "Deluxe with Balcony" ? "active" : ""
@@ -93,7 +95,8 @@ function Room_main() {
           </div>
         </div>
 
-        <div className="unique-room-card row">
+        {/* Unique Room Card */}
+        <div className="row mb-4">
           <div className="col-md-6">
             <div className="room-image-container">
               <img
@@ -103,28 +106,28 @@ function Room_main() {
               />
             </div>
           </div>
-          <div className="col-md-6">
-            <div className="room-content">
-              <h2 className="unique-room-type">
-                {roomData[selectedRoom].title}
-              </h2>
-              <p className="room-description">
-                {roomData[selectedRoom].description}
-              </p>
-              <button className="book-now-btn btn btn-primary">Book Now</button>
-            </div>
+          <div className="col-md-6 room-content">
+            <h2 className="unique-room-type">{roomData[selectedRoom].title}</h2>
+            <p className="room-description">
+              {roomData[selectedRoom].description}
+            </p>
+            <button className="book-now-btn btn btn-primary">Book Now</button>
           </div>
         </div>
 
+        {/* Amenities Section */}
         <div className="amenities-section">
           <h3 className="amenities-title">Room Amenities</h3>
           <ul className="amenities-list list-unstyled row">
             {amenities.map((amenity, index) => (
-              <li key={index} className="amenity-item col-md-4">
+              <li
+                key={index}
+                className="amenity-item col-6 col-md-4 d-flex align-items-center"
+              >
                 <img
                   src={amenity.icon}
                   alt={amenity.name}
-                  className="amenity-icon"
+                  className="amenity-icon me-2"
                 />
                 <span>{amenity.name}</span>
               </li>

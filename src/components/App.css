@@ -673,7 +673,7 @@ button.close-btn:hover {
   margin: 10px 0 0; /* Add top margin for spacing */
 }
 
-z.room-filter {
+.room-filter {
   text-align: center;
   margin: 40px 0;
 }
