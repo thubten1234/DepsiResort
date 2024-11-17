@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./App.css";
+import "../components/App.css";
 
 function Activities() {
   return (
@@ -20,12 +20,9 @@ function Activities() {
           serene setting.
         </p>
         <br />
-        <button
-          className="explore-btn mt-auto"
-          onClick={() => window.scrollTo(0, 0)}
-        >
-          Explore More
-        </button>
+        <Link to="/activities" onClick={() => window.scrollTo(0, 0)}>
+          <button className="explore-btn mt-auto">Explore More</button>
+        </Link>
       </div>
     </div>
   );

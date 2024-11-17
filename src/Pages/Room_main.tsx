@@ -62,7 +62,7 @@ function Room_main() {
         </div>
       </div>
       <div className="unique-room-page container">
-        <div className="row 1mb-4">
+        <div className="room-buttons-container">
           <div className="col-auto">
             <button
               className={`filter-btn btn ${
@@ -96,7 +96,7 @@ function Room_main() {
         </div>
 
         {/* Unique Room Card */}
-        <div className="row mb-4">
+        <div className="row mb-4" style={{ marginTop: "30px" }}>
           <div className="col-md-6">
             <div className="room-image-container">
               <img
@@ -106,12 +106,11 @@ function Room_main() {
               />
             </div>
           </div>
-          <div className="col-md-6 room-content">
+          <div className="col-md-6 room-content" style={{ marginTop: "30px" }}>
             <h2 className="unique-room-type">{roomData[selectedRoom].title}</h2>
             <p className="room-description">
               {roomData[selectedRoom].description}
             </p>
-            <button className="book-now-btn btn btn-primary">Book Now</button>
           </div>
         </div>
 

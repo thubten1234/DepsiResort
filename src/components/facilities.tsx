@@ -1,4 +1,5 @@
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function Facilities() {
   return (
@@ -21,7 +22,9 @@ function Facilities() {
           a warm welcome treat, ensuring a memorable stay.
         </p>
         <br />
-        <button className="explore-btn mt-auto">Explore More</button>
+        <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+          <button className="explore-btn mt-auto">Explore More</button>
+        </Link>
       </div>
     </div>
   );

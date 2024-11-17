@@ -432,7 +432,8 @@ button.close-btn:hover {
 .hero-overlay {
   background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 20px;
+
+  padding: 40px;
 }
 
 .hero-title {
@@ -492,12 +493,6 @@ button.close-btn:hover {
   justify-content: center;
   color: white;
   text-align: center;
-}
-
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 40px;
-  border-radius: 10px;
 }
 
 .hero-title {
@@ -795,4 +790,98 @@ body {
 .unique-room-page {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.library-section {
+  max-width: 800px;
+  width: 90%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 40px auto;
+}
+
+.library-banner {
+  background-image: url("https://yourimageurl.com/library.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+}
+
+.library-content {
+  padding: 20px;
+}
+
+.library-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.library-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive Centering */
+@media (max-width: 768px) {
+  .library-section {
+    text-align: center;
+  }
+}
+.room-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align buttons */
+  gap: 10px; /* Add spacing between buttons */
+  margin-top: 20px;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+@media (max-width: 768px) {
+  .filter-btn {
+    font-size: 0.9rem; /* Reduce button size on smaller screens */
+    padding: 8px 12px;
+  }
+}
+.activity-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+}
+
+.activity-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.explore-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
 }
