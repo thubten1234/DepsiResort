@@ -1,0 +1,96 @@
+/* General styling */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 600px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+}
+
+.card {
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center; /* Center text inside the card */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.card-body ul li {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* Card image adjustments */
+  .card-img-top {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  /* Center the card content */
+  .col-lg-8,
+  .col-lg-4 {
+    text-align: center; /* Center the content in both columns */
+    margin-bottom: 20px;
+  }
+
+  /* Ensure container is centered on mobile */
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Adjust the card body text */
+  .card-body {
+    text-align: center;
+  }
+}

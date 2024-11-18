@@ -48,13 +48,13 @@ function Room_main() {
   ];
 
   return (
-    <div>
+    <>
       <div className="banner-container">
         <Navbar />
       </div>
       <div
         className="hero-section text-center"
-        style={{ backgroundImage: 'url("/rooms.png") ' }}
+        style={{ backgroundImage: 'url("/rooms.png") ', height: "600px" }}
       >
         <div className="hero-overlay">
           <h1 className="hero-title">Your Rooms</h1>
@@ -135,7 +135,7 @@ function Room_main() {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

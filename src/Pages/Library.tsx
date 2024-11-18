@@ -1,60 +1,113 @@
-import "../components/App.css";
+import React from "react";
+import "../components/library.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer-fluid";
 
 function Library() {
   return (
-    <div>
+    <>
       <div className="banner-container">
         <Navbar />
       </div>
+
       <div
         className="hero-section text-center"
-        style={{ backgroundImage: 'url("/library.png") ' }}
+        style={{ backgroundImage: 'url("/library.png") ', height: "600px" }}
       >
         <div className="hero-overlay">
           <h1 className="hero-title">Library</h1>
           <h4 className="hero-subtitle">Discover Knowledge and Serenity</h4>
         </div>
       </div>
-      <div>
-        {" "}
-        <section className="library-section">
-          <div
-            className="library-banner"
-            style={{ backgroundImage: 'url("/booksbanner.png")' }}
-          ></div>
-          <div className="library-content">
-            <h1 className="library-title">Library Section</h1>
-            <p className="library-description">
-              For those who appreciate the company of a good book, our private
-              lobby boasts a curated library section. Immerse yourself in a
-              world of literature, selecting from our collection of books to
-              complement your mood and preferences.
-            </p>
+
+      <div className="container">
+        <div className="row mt-5">
+          <div className="col-lg-8">
+            <h2>The Library</h2>
+
+            <div className="card mb-4">
+              <img src="./library.png" alt="cozy" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Cozy Lounge</h5>
+                <p className="card-text">
+                  Step into our cozy lounge, designed for book lovers, featuring
+                  plush seating, warm lighting, and a tranquil ambiance. Whether
+                  you seek a quiet corner or a space to share thoughts, this
+                  lounge offers the perfect setting for a relaxing literary
+                  escape.
+                </p>
+              </div>
+            </div>
+
+            <div className="card mb-4">
+              <img src="./library-1.png" alt="relax" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Relax and Unwind</h5>
+                <p className="card-text">
+                  Unwind in our peaceful library space, designed for relaxation
+                  and a quiet escape into literature.
+                </p>
+              </div>
+            </div>
+
+            <div className="card mb-4">
+              <img
+                src="./library-2.png"
+                alt="socialize"
+                className="card-img-top"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Socialize with Readers</h5>
+                <p className="card-text">
+                  Connect with fellow readers in a comfortable environment,
+                  perfect for lively discussions and sharing thoughts.
+                </p>
+              </div>
+            </div>
+
+            <div className="card mb-4">
+              <img src="./library-3.png" alt="books" className="card-img-top" />
+              <div className="card-body">
+                <h5 className="card-title">Curated Library</h5>
+                <p className="card-text">
+                  For those who appreciate the company of a good book, our
+                  private lobby boasts a curated library section. Immerse
+                  yourself in a world of literature, selecting from our
+                  collection of books to complement your mood and preferences.
+                </p>
+              </div>
+            </div>
           </div>
-        </section>
-        <section className="library-section">
-          <div
-            className="library-banner"
-            style={{ backgroundImage: 'url("/libraryseating.png")' }}
-          ></div>
-          <div className="library-content">
-            <h1 className="library-title">Comfortable Lounges</h1>
-            <p className="library-description">
-              Step into our small and cozy lounge, thoughtfully designed for
-              book lovers. With plush seating, warm lighting, and a tranquil
-              ambiance, it's the perfect haven to immerse yourself in a
-              captivating read from our library. Whether you prefer a quiet
-              corner or a shared space to exchange thoughts with fellow readers,
-              this lounge promises comfort and serenity for your literary
-              escape.
-            </p>
+
+          <div className="col-lg-4">
+            <div className="card mb-4">
+              <div className="card-body">
+                <h5 className="card-title">Library Hours</h5>
+                <ul>
+                  <li>Monday - Friday: 9 AM - 9 PM</li>
+                  <li>Saturday: 10 AM - 9 PM</li>
+                  <li>Sunday: 10 AM - 9 PM</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="card mb-4">
+              <div className="card-body">
+                <h5 className="card-title">Follow Us</h5>
+                <p>Stay connected with us through our social media channels:</p>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
+
       <Footer />
-    </div>
+    </>
   );
 }
 

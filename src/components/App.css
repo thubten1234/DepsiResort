@@ -792,48 +792,6 @@ body {
   margin: 0 auto;
 }
 
-.library-section {
-  max-width: 800px;
-  width: 90%;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  margin: 40px auto;
-}
-
-.library-banner {
-  background-image: url("https://yourimageurl.com/library.jpg"); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  border-radius: 8px 8px 0 0;
-}
-
-.library-content {
-  padding: 20px;
-}
-
-.library-title {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.library-description {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-}
-
-/* Responsive Centering */
-@media (max-width: 768px) {
-  .library-section {
-    text-align: center;
-  }
-}
 .room-buttons-container {
   display: flex;
   flex-wrap: wrap;

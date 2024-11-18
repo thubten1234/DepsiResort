@@ -20,13 +20,13 @@ function Services() {
   }, []);
 
   return (
-    <div>
+    <>
       <div className="banner-container">
         <Navbar />
       </div>
       <div
         className="hero-section text-center"
-        style={{ backgroundImage: 'url("/facilities.png")' }}
+        style={{ backgroundImage: 'url("/facilities.png")', height: "600px" }}
       >
         <div className="hero-overlay">
           <h1 className="hero-title">Services & Hospitality</h1>
@@ -154,7 +154,7 @@ function Services() {
       <div>
         <Footer />
       </div>
-    </div>
+    </>
   );
 }
 

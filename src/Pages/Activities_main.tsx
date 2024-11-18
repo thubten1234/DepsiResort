@@ -3,14 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer-fluid";
 function Activities_main() {
   return (
-    <div>
+    <>
       <div className="banner-container">
         <Navbar />
       </div>
 
       <div
         className="hero-section text-center mb-5"
-        style={{ backgroundImage: 'url("/activities.png")' }}
+        style={{ backgroundImage: 'url("/activities.png")', height: "600px" }}
       >
         <div className="hero-overlay">
           <h1 className="hero-title">Activities</h1>
@@ -65,7 +65,6 @@ function Activities_main() {
             </div>
           </div>
 
-          {/* Outdoor Extravaganza Section */}
           <div className="col-12 col-md-4 mb-4">
             <div className="activity-card text-center">
               <img
@@ -81,7 +80,6 @@ function Activities_main() {
             </div>
           </div>
 
-          {/* Photo Spot Section */}
           <div className="col-12 col-md-4 mb-4">
             <div className="activity-card text-center">
               <img
@@ -99,7 +97,7 @@ function Activities_main() {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ import Footer from "../components/Footer-fluid";
 
 function AboutUs() {
   return (
-    <div>
+    <>
       <div className="banner-container">
         <Navbar />
       </div>
@@ -79,7 +79,7 @@ function AboutUs() {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 }
 
